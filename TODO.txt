@@ -1,0 +1,44 @@
+PART A: The boons
+
+Boons are the value for flat rate growth in deadlock
+
+Step 1: Base stats
+
+show base stats of a hero from level 0 to 35, include special cases like Venator's spirit scaling resistances.
+
+Step 2: Base Abilities
+
+show the stats of each heros base ability, factor changes to the base stats if the ability affects something.
+
+Step 3: Ability Upgrades
+
+show the stats of an ability at each of their 3 upgrade tiers.
+
+PART B: Investment Bonuses.
+
+If a user invests enough souls into a category, they increase weapon damage, max health, or spirit power.
+
+ex. Buying stalker invests 1.6 souls into the weapons category. At 1.6k souls invested, a 3% bonus to weapon damage is applied.
+
+PART C: The items
+
+the hardest part.
+
+step 0: Inventory.
+
+A hero can only have 12 items max in their inventory.
+
+step 1: component building.
+
+some items are on a discount if a different item was bought before hand. If a multiple items get a discount from a single item, only one item can redeem the discount, the rest are back to normal price. buying a component before buying its upgrade lets you keep the component if the upgraded item is sold. buying an item on discount also does not take up a new slot, it will replace the slot of the item it upgrades from. 
+
+if you directly buy and item that has a unpurchased component, the component is bought, it is also sold if the item is sold.
+a component will transfer what item it upgrades too if the item is was upgraded was sold, and another that would have upgraded from is also bought.
+
+step 2: items stats.
+
+items contain passive and active stats. passive stats are factored into calculation, if in the heroes inventory.
+
+step 3: total value
+
+calculates total value of bought items, investments will be moved from manually set to automatically set.
