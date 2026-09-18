@@ -1,0 +1,29 @@
+bebop - boon scaling on bullet resist
+
+dynamo - boon scaling on bullet resist
+
+gray talon - boon and spirit scaling on bullet damage
+- spirit scaling on move speed
+
+haze - spirit scaling on ammo
+
+kelvin - spirit scaling on spirit resist
+
+paige - boon and spirit scaling on heavy melee
+
+sinclair - spirit scaling on move speed
+
+venator - spirit scaling on bullet resist
+- spirit scaling on spirit resist
+
+victor - spirit scaling on health regen
+
+vindicta - boon and spirit scaling on bullet damage
+
+vyper - spirit scaling on move speed
+
+warden - spirit scaling on fire rate
+
+wraith - spirit scaling on sprint speed
+
+yamato - spirit scaling on ammo
