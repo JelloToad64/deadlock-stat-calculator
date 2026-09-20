@@ -1,9 +1,22 @@
+UNIVERSAL SCALING (for every hero)
+------------------
+Weapon damage
+
+Light melee
+
+Heavy melee
+
+health
+
+spirit power
+
+HERO OVERRIDES (Hero specific scaling)
+--------------
 bebop - boon scaling on bullet resist
 
 dynamo - boon scaling on bullet resist
 
-gray talon - boon and spirit scaling on bullet damage
-- spirit scaling on move speed
+gray talon - boon and spirit scaling on bullet damage, spirit scaling on move speed
 
 haze - spirit scaling on ammo
 
@@ -13,8 +26,7 @@ paige - boon and spirit scaling on heavy melee
 
 sinclair - spirit scaling on move speed
 
-venator - spirit scaling on bullet resist
-- spirit scaling on spirit resist
+venator - spirit scaling on bullet resist, spirit scaling on spirit resist
 
 victor - spirit scaling on health regen
 
