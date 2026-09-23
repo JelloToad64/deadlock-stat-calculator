@@ -4,15 +4,11 @@ Boons are the value for flat rate growth in deadlock
 
 Step 1: Base stats
 
-show base stats of a hero from level 0 to 35, include special cases like Venator's spirit scaling resistances.
+show base stats of a hero from level 0 to 35, implement boon scaling
 
-Step 2: Base Abilities
+Step 2: hero overrides
 
-show the stats of each heros base ability, factor changes to the base stats if the ability affects something.
-
-Step 3: Ability Upgrades
-
-show the stats of an ability at each of their 3 upgrade tiers.
+account for hero overrides, scaling on stats that arent normally scaled, or added on top of boon scaling.
 
 PART B: Investment Bonuses.
 
@@ -20,7 +16,17 @@ If a user invests enough souls into a category, they increase weapon damage, max
 
 ex. Buying stalker invests 1.6 souls into the weapons category. At 1.6k souls invested, a 3% bonus to weapon damage is applied.
 
-PART C: The items
+PART C: Abilities
+
+step 1: base Abilities
+
+shows the stats for Abilities at thier base level.
+
+step 2: upgrades
+
+modify ability stats based on upgrades.
+
+PART D: The items
 
 the hardest part.
 
