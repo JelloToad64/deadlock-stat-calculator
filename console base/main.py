@@ -1,6 +1,10 @@
 import customtkinter as ctk
 import json
 import os
+import pygame
+
+# Initialize Pygame mixer for background music
+pygame.mixer.init()
 
 ctk.set_appearance_mode("Dark")
 ctk.set_default_color_theme("blue")
@@ -10,19 +14,34 @@ class DeadlockBuildCalculator(ctk.CTk):
         super().__init__()
 
         self.title("Deadlock Build Calculator")
-        self.geometry("600x850")
+        self.geometry("600x900")
+
+        # Audio state tracking
+        self.is_music_muted = False
+        self.init_audio()
 
         # Load raw data immediately
         self.hero_json = {}
         self.hero_map = {}
         self.load_hero_data()
 
-        # --- Top Section: Hero Selection ---
-        self.title_label = ctk.CTkLabel(
-            self, text="Deadlock Hero Stat Calculator", font=ctk.CTkFont(size=20, weight="bold")
-        )
-        self.title_label.pack(pady=10)
+        # --- Top Section: Header & Audio Toggle ---
+        self.header_frame = ctk.CTkFrame(self, fg_color="transparent")
+        self.header_frame.pack(pady=10, padx=20, fill="x")
 
+        self.title_label = ctk.CTkLabel(
+            self.header_frame, text="Deadlock Build Calculator", font=ctk.CTkFont(size=20, weight="bold")
+        )
+        self.title_label.pack(side="left")
+
+        # Mute / Unmute Toggle Button
+        self.audio_btn = ctk.CTkButton(
+            self.header_frame, text="🔊 Music: ON", width=110, command=self.toggle_audio,
+            fg_color="#334155", hover_color="#475569"
+        )
+        self.audio_btn.pack(side="right")
+
+        # --- Hero Selection Dropdown ---
         self.hero_combobox = ctk.CTkComboBox(
             self, values=list(self.hero_map.keys()), command=self.on_input_changed, width=350, height=35
         )
@@ -44,12 +63,10 @@ class DeadlockBuildCalculator(ctk.CTk):
         self.level_slider.pack(pady=5, padx=20, fill="x")
 
         # --- Stats Display Section (Scrollable Frame) ---
-        self.stats_scroll_frame = ctk.CTkScrollableFrame(self, width=520, height=500)
+        self.stats_scroll_frame = ctk.CTkScrollableFrame(self, width=520, height=480)
         self.stats_scroll_frame.pack(pady=10, padx=20, fill="both", expand=True)
 
-        # Dictionary to hold dynamic labels for quick text updates
         self.stat_labels = {}
-        
         stat_keys = [
             ("Hero Name", "Hero Name"),
             ("Spirit Power", "Spirit Power"),
@@ -79,8 +96,29 @@ class DeadlockBuildCalculator(ctk.CTk):
             lbl.pack(fill="x", pady=3, padx=10)
             self.stat_labels[key] = lbl
 
-        # Trigger initial calculation for the default selection
         self.update_calculations()
+
+    def init_audio(self):
+        try:
+            audio_path = os.path.join("assets", "Teleporter_music_comp.mp3")
+            if os.path.exists(audio_path):
+                pygame.mixer.music.load(audio_path)
+                pygame.mixer.music.set_volume(0.3)  # Set default volume to 30%
+                pygame.mixer.music.play(-1)         # -1 means loop infinitely
+            else:
+                print(f"Audio file not found at {audio_path}. Skipping music initialization.")
+        except Exception as e:
+            print(f"Could not initialize audio: {e}")
+
+    def toggle_audio(self):
+        if self.is_music_muted:
+            pygame.mixer.music.unpause()
+            self.audio_btn.configure(text="🔊 Music: ON", fg_color="#334155")
+            self.is_music_muted = False
+        else:
+            pygame.mixer.music.pause()
+            self.audio_btn.configure(text="🔇 Music: OFF", fg_color="#64748b")
+            self.is_music_muted = True
 
     def load_hero_data(self):
         try:
@@ -92,7 +130,7 @@ class DeadlockBuildCalculator(ctk.CTk):
                 (hero_id, details) for hero_id, details in self.hero_json.items() 
                 if details.get("IsDisabled", True) is False
             ]
-            sorted_heroes = sorted(active_heroes, key=lambda x: x[1].get("name", x[0]))
+            sorted_heroes = sorted(active_heroes, key=lambda x: x[1].get("Name", x[0]))
 
             for hero_id, details in sorted_heroes:
                 name = details.get("Name", hero_id)
@@ -119,9 +157,8 @@ class DeadlockBuildCalculator(ctk.CTk):
         level = int(self.level_slider.get())
         h_data = self.hero_json.get(name, {})
 
-        # Core Formulas mapped straight from your console script
+        # Core Formulas
         spirit_power = 0 + (h_data.get("LevelScaling", {}).get("TechPower", 0) * level)
-
         bullet_damage = h_data.get("Weapon", {}).get("BulletDamage", 0) + (h_data.get("LevelScaling", {}).get("BulletDamage", 0) * level) + (h_data.get("SpiritScaling", {}).get("BulletDamage", 0) * spirit_power)
         ammo = h_data.get("Weapon", {}).get("ClipSize", 0) + (h_data.get("LevelScaling", {}).get("ClipSize", 0) * level) + (h_data.get("SpiritScaling", {}).get("ClipSize", 0) * spirit_power)
         rounds_per_second = h_data.get("Weapon", {}).get("RoundsPerSecond", 0) + (h_data.get("LevelScaling", {}).get("RoundsPerSecond", 0) * level) + (h_data.get("SpiritScaling", {}).get("RoundsPerSecond", 0) * spirit_power)
@@ -137,13 +174,12 @@ class DeadlockBuildCalculator(ctk.CTk):
         move_speed = h_data.get("MaxMoveSpeed", 0) + (h_data.get("LevelScaling", {}).get("MaxMoveSpeed", 0) * level) + (h_data.get("SpiritScaling", {}).get("MaxMoveSpeed", 0) * spirit_power)
         sprint_speed = h_data.get("SprintSpeed", 0) + (h_data.get("LevelScaling", {}).get("SprintSpeed", 0) * level) + (h_data.get("SpiritScaling", {}).get("SprintSpeed", 0) * spirit_power)
         dash_speed_ground = h_data.get("GroundDashSpeed", 0) + (h_data.get("LevelScaling", {}).get("GroundDashSpeed", 0) * level) + (h_data.get("SpiritScaling", {}).get("GroundDashSpeed", 0) * spirit_power)
-        dash_speed_air = h_data.get("AirDashSpeed", 0) + (h_data.get("LevelScaling", {}).get("AirDashSpeed", 0) * level) + (h_data.get("SpiritScaling", {}).get("AirDashSpeed", 0) * spirit_power)
+        dash_speed_air = h_data.get("AirDashSpeed", 0) + (h_data.get("LevelScaling", {}).get("LevelScaling", {}).get("AirDashSpeed", 0) * level if "AirDashSpeed" in h_data.get("LevelScaling", {}) else 0) + (h_data.get("SpiritScaling", {}).get("AirDashSpeed", 0) * spirit_power) # defensive catch fallback
         stamina = h_data.get("Stamina", 0) + (h_data.get("LevelScaling", {}).get("Stamina", 0) * level) + (h_data.get("SpiritScaling", {}).get("Stamina", 0) * spirit_power)
         stamina_regen = h_data.get("StaminaCooldown", 0) + (h_data.get("LevelScaling", {}).get("StaminaCooldown", 0) * level) + (h_data.get("SpiritScaling", {}).get("StaminaCooldown", 0) * spirit_power)
 
         hero_display_name = h_data.get("Name", name)
 
-        # Push calculated metrics back into the UI labels
         self.stat_labels["Hero Name"].configure(text=f"Hero Name: {hero_display_name}")
         self.stat_labels["Spirit Power"].configure(text=f"Spirit Power: {round(spirit_power, 2)}")
         self.stat_labels["Bullet Damage"].configure(text=f"Bullet Damage: {round(bullet_damage, 2)}")

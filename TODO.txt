@@ -10,23 +10,7 @@ Step 2: hero overrides
 
 account for hero overrides, scaling on stats that arent normally scaled, or added on top of boon scaling.
 
-PART B: Investment Bonuses.
-
-If a user invests enough souls into a category, they increase weapon damage, max health, or spirit power.
-
-ex. Buying stalker invests 1.6 souls into the weapons category. At 1.6k souls invested, a 3% bonus to weapon damage is applied.
-
-PART C: Abilities
-
-step 1: base Abilities
-
-shows the stats for Abilities at thier base level.
-
-step 2: upgrades
-
-modify ability stats based on upgrades.
-
-PART D: The items
+PART B: The items
 
 the hardest part.
 
@@ -48,3 +32,19 @@ items contain passive and active stats. passive stats are factored into calculat
 step 3: total value
 
 calculates total value of bought items, investments will be moved from manually set to automatically set.
+
+PART C: Investment Bonuses.
+
+If a user invests enough souls into a category, they increase weapon damage, max health, or spirit power.
+
+ex. Buying stalker invests 1.6 souls into the weapons category. At 1.6k souls invested, a 3% bonus to weapon damage is applied.
+
+PART D: Abilities
+
+step 1: base Abilities
+
+shows the stats for Abilities at thier base level.
+
+step 2: upgrades
+
+modify ability stats based on upgrades.
