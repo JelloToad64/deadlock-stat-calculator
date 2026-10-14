@@ -1,4 +1,84 @@
 {
+    "hero_artist": {
+        "AbilityResourceMax": 0,
+        "AbilityResourceRegenPerSecond": 0,
+        "AirDashDistanceInMeters": 8.0,
+        "AirDashDuration": 0.47,
+        "AirDashSpeed": 17.0,
+        "BaseHealthRegen": 2.0,
+        "BaseWeaponDamageIncrease": 0,
+        "BoundAbilities": {},
+        "CritDamageBonusPercent": 0.0,
+        "CritDamageReceivedPercent": 0.0,
+        "CrouchSpeed": 4.75,
+        "GroundDashDistanceInMeters": 10.0,
+        "GroundDashDuration": 0.68,
+        "GroundDashSpeed": 14.7,
+        "HeavyMeleeDamage": 116,
+        "HeroBulletLifestealEffectiveness": 1.0,
+        "HeroSpiritLifestealEffectiveness": 1.0,
+        "InDevelopment": false,
+        "InHeroLabs": false,
+        "IsDisabled": false,
+        "IsRecommended": false,
+        "IsSelectable": true,
+        "LevelScaling": {
+            "BulletDamage": 0.55,
+            "MaxHealth": 34.0,
+            "PowerIncreases": 1,
+            "TechPower": 1.1,
+            "LightMeleeDamage": 1.2,
+            "HeavyMeleeDamage": 2.784,
+            "DPS": 5.2381,
+            "SustainedDPS": 2.9204
+        },
+        "LightMeleeDamage": 50,
+        "Lore": "hero_artist_lore",
+        "MaxHealth": 780.0,
+        "MaxMoveSpeed": 7.2,
+        "MoveAcceleration": 4,
+        "Name": "Violet",
+        "OOCHealthRegen": 0,
+        "Playstyle": "hero_artist_playstyle",
+        "ProcBuildUpRateScale": 1,
+        "ReloadSpeed": 0,
+        "Role": "hero_artist_role",
+        "SpiritScaling": {},
+        "SprintSpeed": 1.6,
+        "Stamina": 3,
+        "StaminaCooldown": 4.5000045000045,
+        "StaminaRegenPerSecond": 0.222222,
+        "TechDuration": 0,
+        "TechRange": 0,
+        "Type": null,
+        "Weapon": {
+            "BulletSpeed": 660.4,
+            "BulletDamage": 5.5,
+            "RoundsPerSecond": 9.5238,
+            "ClipSize": 27,
+            "ReloadTime": 2.25,
+            "ReloadMovespeed": 1.0,
+            "ReloadDelay": 0.0,
+            "ReloadSingle": false,
+            "FalloffStartRange": 18.0,
+            "FalloffEndRange": 55.0,
+            "FalloffStartScale": 1.0,
+            "FalloffEndScale": 0.1,
+            "FalloffBias": 0.5,
+            "BulletGravityScale": 0.8,
+            "BulletRadius": 0.1016,
+            "BulletsPerShot": 1,
+            "BulletsPerBurst": 1,
+            "BurstInterShotInterval": 0,
+            "ShootMoveSpeed": 0.75,
+            "HitOnceAcrossAllBullets": false,
+            "CanCrit": true,
+            "AmmoConsumedPerShot": 1,
+            "DPS": 52.381,
+            "SustainedDPS": 29.204
+        },
+        "WeaponPowerScale": 1
+    },
     "hero_astro": {
         "AbilityResourceMax": 0,
         "AbilityResourceRegenPerSecond": 0,
@@ -55,6 +135,7 @@
         "MaxMoveSpeed": 8.2,
         "MoveAcceleration": 4,
         "Name": "Holliday",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_astro_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -92,8 +173,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 41.693,
             "SustainedDPS": 26.354,
-            "NameKey": "citadel_weapon_hero_astro_set",
-            "DescKey": "citadel_weapon_hero_astro_set_desc",
+            "NameKey": "citadel_weapon_astro_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_MediumRange",
                 "Attribute_EWeaponAttribute_HeavyHitter"
@@ -157,6 +237,7 @@
         "MaxMoveSpeed": 6.4,
         "MoveAcceleration": 4,
         "Name": "Abrams",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_atlas_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -194,11 +275,116 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 51.429,
             "SustainedDPS": 30.542,
-            "NameKey": "citadel_weapon_hero_atlas_set",
-            "DescKey": "citadel_weapon_hero_atlas_set_desc",
+            "NameKey": "citadel_weapon_atlas_set",
+            "DescKey": "citadel_weapon_atlas_set_desc",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_Spreadshot",
                 "Attribute_EWeaponAttribute_CloseRange"
+            ]
+        },
+        "WeaponPowerScale": 1
+    },
+    "hero_baba": {
+        "AbilityResourceMax": 0,
+        "AbilityResourceRegenPerSecond": 0,
+        "AirDashDistanceInMeters": 8.0,
+        "AirDashDuration": 0.47,
+        "AirDashSpeed": 17.0,
+        "BaseHealthRegen": 2.5,
+        "BaseWeaponDamageIncrease": 0,
+        "BoundAbilities": {
+            "1": {
+                "Name": "Threadsap",
+                "Key": "ability_baba_bubbling_brew"
+            },
+            "2": {
+                "Name": "Granny Long Legs",
+                "Key": "ability_baba_bench_run"
+            },
+            "3": {
+                "Name": "Baba's Brew",
+                "Key": "ability_baba_hexing_brew"
+            },
+            "4": {
+                "Name": "Feed The Birds",
+                "Key": "ability_baba_ultimate_2"
+            }
+        },
+        "CritDamageBonusPercent": -20.0,
+        "CritDamageReceivedPercent": 0.0,
+        "CrouchSpeed": 4.75,
+        "GroundDashDistanceInMeters": 10.0,
+        "GroundDashDuration": 0.68,
+        "GroundDashSpeed": 14.7,
+        "HeavyMeleeDamage": 116,
+        "HeroBulletLifestealEffectiveness": 1.0,
+        "HeroSpiritLifestealEffectiveness": 1.0,
+        "InDevelopment": true,
+        "InHeroLabs": false,
+        "IsDisabled": false,
+        "IsRecommended": false,
+        "IsSelectable": true,
+        "LevelScaling": {
+            "BulletDamage": 0.41,
+            "MaxHealth": 45.0,
+            "PowerIncreases": 1,
+            "TechPower": 1.1,
+            "LightMeleeDamage": 0.7,
+            "HeavyMeleeDamage": 1.624,
+            "DPS": 1.3226,
+            "SustainedDPS": 0.86014
+        },
+        "LightMeleeDamage": 50,
+        "Lore": "hero_baba_lore",
+        "MaxHealth": 780.0,
+        "MaxMoveSpeed": 6.5,
+        "MoveAcceleration": 4,
+        "Name": "Baba",
+        "OOCHealthRegen": 0,
+        "Playstyle": "hero_baba_playstyle",
+        "ProcBuildUpRateScale": 1,
+        "ReloadSpeed": 0,
+        "Role": "hero_baba_role",
+        "SpiritScaling": {
+            "TechResist": 0.12
+        },
+        "SprintSpeed": 1.6,
+        "Stamina": 2,
+        "StaminaCooldown": 4.5000045000045,
+        "StaminaRegenPerSecond": 0.222222,
+        "TechDuration": 0,
+        "TechRange": 0,
+        "TechResist": 8.0,
+        "Type": "Mystic",
+        "Weapon": {
+            "BulletSpeed": 177.8,
+            "BulletDamage": 8.8,
+            "RoundsPerSecond": 3.2258,
+            "ClipSize": 15,
+            "ReloadTime": 2.5,
+            "ReloadMovespeed": 1.0,
+            "ReloadDelay": 0.0,
+            "ReloadSingle": false,
+            "FalloffStartRange": 15.0,
+            "FalloffEndRange": 42.0,
+            "FalloffStartScale": 1.0,
+            "FalloffEndScale": 0.1,
+            "FalloffBias": 0.5,
+            "BulletGravityScale": 0,
+            "BulletRadius": 0.1778,
+            "BulletsPerShot": 3,
+            "BulletsPerBurst": 1,
+            "BurstInterShotInterval": 0,
+            "ShootMoveSpeed": 0.75,
+            "HitOnceAcrossAllBullets": true,
+            "CanCrit": true,
+            "AmmoConsumedPerShot": 1,
+            "DPS": 28.387,
+            "SustainedDPS": 18.462,
+            "NameKey": "citadel_weapon_baba_set",
+            "WeaponTypes": [
+                "Attribute_EWeaponAttribute_RapidFire",
+                "Attribute_EWeaponAttribute_LongRange"
             ]
         },
         "WeaponPowerScale": 1
@@ -261,6 +447,7 @@
         "MaxMoveSpeed": 6.45,
         "MoveAcceleration": 4,
         "Name": "Bebop",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_bebop_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -298,8 +485,8 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 59.287,
             "SustainedDPS": 41.637,
-            "NameKey": "citadel_weapon_hero_bebop_set",
-            "DescKey": "citadel_weapon_hero_bebop_set_desc",
+            "NameKey": "citadel_weapon_bebop_set",
+            "DescKey": "citadel_weapon_bebop_set_desc",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_BeamWeapon",
                 "Attribute_EWeaponAttribute_MediumRange"
@@ -317,20 +504,20 @@
         "BaseWeaponDamageIncrease": 0,
         "BoundAbilities": {
             "1": {
-                "Name": "Skipshot",
-                "Key": "ability_boho_bouncyprojectile"
+                "Name": null,
+                "Key": "ability_boho_skipgrenade"
             },
             "2": {
-                "Name": "Swish",
-                "Key": "ability_boho_doublehit"
+                "Name": null,
+                "Key": "ability_boho_ability02"
             },
             "3": {
-                "Name": "Intertwine",
-                "Key": "ability_boho_damageshare"
+                "Name": null,
+                "Key": "ability_boho_ability03"
             },
             "4": {
                 "Name": null,
-                "Key": "ability_boho_channeltether"
+                "Key": "ability_boho_ridebroom"
             }
         },
         "CritDamageBonusPercent": 0.0,
@@ -363,6 +550,7 @@
         "MaxMoveSpeed": 8.0,
         "MoveAcceleration": 4,
         "Name": "Boho",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_boho_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -400,8 +588,6 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 55.0,
             "SustainedDPS": 30.0,
-            "NameKey": "citadel_weapon_hero_boho_set",
-            "DescKey": "citadel_weapon_hero_boho_set_desc",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_RapidFire",
                 "Attribute_EWeaponAttribute_LongRange"
@@ -448,7 +634,7 @@
         "InHeroLabs": false,
         "IsDisabled": true,
         "IsRecommended": false,
-        "IsSelectable": false,
+        "IsSelectable": true,
         "LevelScaling": {
             "BulletDamage": 0.077,
             "MaxHealth": 63.0,
@@ -465,6 +651,7 @@
         "MaxMoveSpeed": 7.2,
         "MoveAcceleration": 4,
         "Name": "Bomber",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_bomber_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -501,9 +688,7 @@
             "CanCrit": true,
             "AmmoConsumedPerShot": 1,
             "DPS": 61.111,
-            "SustainedDPS": 31.731,
-            "NameKey": "citadel_weapon_hero_bomber_set",
-            "DescKey": "citadel_weapon_hero_bomber_set_desc"
+            "SustainedDPS": 31.731
         },
         "WeaponPowerScale": 1
     },
@@ -563,6 +748,7 @@
         "MaxMoveSpeed": 6.9,
         "MoveAcceleration": 4,
         "Name": "Paige",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_bookworm_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -604,8 +790,7 @@
             "ExplosionDamageScaleAtMaxRadius": 1.0,
             "DPS": 70.0,
             "SustainedDPS": 51.579,
-            "NameKey": "citadel_weapon_hero_bookworm_set",
-            "DescKey": "citadel_weapon_hero_bookworm_set_desc",
+            "NameKey": "citadel_weapon_bookworm_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_RapidFire",
                 "Attribute_EWeaponAttribute_LongRange"
@@ -652,7 +837,7 @@
         "InHeroLabs": false,
         "IsDisabled": true,
         "IsRecommended": false,
-        "IsSelectable": false,
+        "IsSelectable": true,
         "LevelScaling": {
             "MaxHealth": 63.0,
             "PowerIncreases": 1,
@@ -666,6 +851,7 @@
         "MaxMoveSpeed": 7.2,
         "MoveAcceleration": 4,
         "Name": "Cadence",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_cadence_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -703,8 +889,117 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 28.0,
             "SustainedDPS": 18.968,
-            "NameKey": "citadel_weapon_hero_cadence_set",
-            "DescKey": "citadel_weapon_hero_cadence_set_desc"
+            "NameKey": "citadel_weapon_cadence_set",
+            "DescKey": "citadel_weapon_cadence_set_desc"
+        },
+        "WeaponPowerScale": 1
+    },
+    "hero_chessmaster": {
+        "AbilityResourceMax": 0,
+        "AbilityResourceRegenPerSecond": 0,
+        "AirDashDistanceInMeters": 8.0,
+        "AirDashDuration": 0.51,
+        "AirDashSpeed": 15.7,
+        "BaseHealthRegen": 2.0,
+        "BaseWeaponDamageIncrease": 0,
+        "BoundAbilities": {
+            "1": {
+                "Name": "Setup Bishop",
+                "Key": "ability_chessmaster_throwbishop"
+            },
+            "2": {
+                "Name": "Kingside Knight",
+                "Key": "ability_chessmaster_knightbuff"
+            },
+            "3": {
+                "Name": "Rook Battery",
+                "Key": "ability_chessmaster_forkpiece"
+            },
+            "4": {
+                "Name": "Develop Queen",
+                "Key": "ability_chessmaster_queen"
+            }
+        },
+        "CritDamageBonusPercent": 0.0,
+        "CritDamageReceivedPercent": 0.0,
+        "CrouchSpeed": 4.75,
+        "GravityChange": -25.0,
+        "GroundDashDistanceInMeters": 10.0,
+        "GroundDashDuration": 0.72,
+        "GroundDashSpeed": 13.9,
+        "HeavyMeleeDamage": 116,
+        "HeroBulletLifestealEffectiveness": 1.0,
+        "HeroSpiritLifestealEffectiveness": 1.0,
+        "InDevelopment": false,
+        "InHeroLabs": false,
+        "IsDisabled": false,
+        "IsRecommended": false,
+        "IsSelectable": true,
+        "LevelScaling": {
+            "BulletDamage": 0.4,
+            "MaxHealth": 40.0,
+            "PowerIncreases": 1,
+            "TechPower": 1.1,
+            "LightMeleeDamage": 1.58,
+            "HeavyMeleeDamage": 3.6656,
+            "DPS": 0.8,
+            "SustainedDPS": 0.45714
+        },
+        "LightMeleeDamage": 50,
+        "Lore": "hero_chessmaster_lore",
+        "MaxHealth": 780.0,
+        "MaxMoveSpeed": 6.7,
+        "MoveAcceleration": 4,
+        "Name": "Solomon",
+        "OOCHealthRegen": 0,
+        "Playstyle": "hero_chessmaster_playstyle",
+        "ProcBuildUpRateScale": 1,
+        "ReloadSpeed": 0,
+        "Role": "hero_chessmaster_role",
+        "SpiritScaling": {
+            "BulletDamage": 0.14,
+            "DPS": 0.28,
+            "SustainedDPS": 0.16
+        },
+        "SprintSpeed": 3.25,
+        "Stamina": 2,
+        "StaminaCooldown": 4.5000045000045,
+        "StaminaRegenPerSecond": 0.222222,
+        "TechDuration": 0,
+        "TechRange": 0,
+        "Type": "Mystic",
+        "Weapon": {
+            "BulletSpeed": 355.6,
+            "BulletDamage": 30.0,
+            "RoundsPerSecond": 2.0,
+            "ClipSize": 8,
+            "ReloadTime": 3.0,
+            "ReloadMovespeed": 1.0,
+            "ReloadDelay": 0.0,
+            "ReloadSingle": false,
+            "FalloffStartRange": 19.99,
+            "FalloffEndRange": 45.72,
+            "FalloffStartScale": 1.0,
+            "FalloffEndScale": 0.1,
+            "FalloffBias": 0.5,
+            "BulletGravityScale": 0.0,
+            "BulletRadius": 0.2032,
+            "BulletsPerShot": 1,
+            "BulletsPerBurst": 1,
+            "BurstInterShotInterval": 0.075,
+            "ShootMoveSpeed": 0.75,
+            "HitOnceAcrossAllBullets": true,
+            "CanCrit": true,
+            "AmmoConsumedPerShot": 1,
+            "ExplosionRadius": 1.016,
+            "ExplosionDamageScaleAtMaxRadius": 1.0,
+            "DPS": 60.0,
+            "SustainedDPS": 34.286,
+            "NameKey": "citadel_weapon_chessmaster_set",
+            "WeaponTypes": [
+                "Attribute_EWeaponAttribute_RapidFire",
+                "Attribute_EWeaponAttribute_LongRange"
+            ]
         },
         "WeaponPowerScale": 1
     },
@@ -764,6 +1059,7 @@
         "MaxMoveSpeed": 6.7,
         "MoveAcceleration": 4,
         "Name": "Paradox",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_chrono_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -801,12 +1097,92 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 51.398,
             "SustainedDPS": 34.531,
-            "NameKey": "citadel_weapon_hero_chrono_set",
-            "DescKey": "citadel_weapon_hero_chrono_set_desc",
+            "NameKey": "citadel_weapon_chrono_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_BurstFire",
                 "Attribute_EWeaponAttribute_MediumRange"
             ]
+        },
+        "WeaponPowerScale": 1
+    },
+    "hero_deadpack": {
+        "AbilityResourceMax": 0,
+        "AbilityResourceRegenPerSecond": 0,
+        "AirDashDistanceInMeters": 8.0,
+        "AirDashDuration": 0.47,
+        "AirDashSpeed": 17.0,
+        "BaseHealthRegen": 2.0,
+        "BaseWeaponDamageIncrease": 0,
+        "BoundAbilities": {},
+        "CritDamageBonusPercent": 0.0,
+        "CritDamageReceivedPercent": 0.0,
+        "CrouchSpeed": 4.75,
+        "GroundDashDistanceInMeters": 10.0,
+        "GroundDashDuration": 0.68,
+        "GroundDashSpeed": 14.7,
+        "HeavyMeleeDamage": 116,
+        "HeroBulletLifestealEffectiveness": 1.0,
+        "HeroSpiritLifestealEffectiveness": 1.0,
+        "InDevelopment": false,
+        "InHeroLabs": false,
+        "IsDisabled": false,
+        "IsRecommended": false,
+        "IsSelectable": true,
+        "LevelScaling": {
+            "BulletDamage": 0.42,
+            "BulletDamageAltFire": 1.6,
+            "MaxHealth": 39.0,
+            "PowerIncreases": 1,
+            "TechPower": 1.1,
+            "LightMeleeDamage": 1.58,
+            "HeavyMeleeDamage": 3.6656,
+            "DPS": 4.0,
+            "SustainedDPS": 2.2301
+        },
+        "LightMeleeDamage": 50,
+        "Lore": "hero_deadpack_lore",
+        "MaxHealth": 780.0,
+        "MaxMoveSpeed": 7.2,
+        "MoveAcceleration": 4,
+        "Name": "Deadman Danny",
+        "OOCHealthRegen": 0,
+        "Playstyle": "hero_deadpack_playstyle",
+        "ProcBuildUpRateScale": 1,
+        "ReloadSpeed": 0,
+        "Role": "hero_deadpack_role",
+        "SpiritScaling": {},
+        "SprintSpeed": 1.6,
+        "Stamina": 3,
+        "StaminaCooldown": 4.5000045000045,
+        "StaminaRegenPerSecond": 0.222222,
+        "TechDuration": 0,
+        "TechRange": 0,
+        "Type": null,
+        "Weapon": {
+            "BulletSpeed": 660.4,
+            "BulletDamage": 5.5,
+            "RoundsPerSecond": 9.5238,
+            "ClipSize": 27,
+            "ReloadTime": 2.25,
+            "ReloadMovespeed": 1.0,
+            "ReloadDelay": 0.0,
+            "ReloadSingle": false,
+            "FalloffStartRange": 18.0,
+            "FalloffEndRange": 55.0,
+            "FalloffStartScale": 1.0,
+            "FalloffEndScale": 0.1,
+            "FalloffBias": 0.5,
+            "BulletGravityScale": 0.8,
+            "BulletRadius": 0.1016,
+            "BulletsPerShot": 1,
+            "BulletsPerBurst": 1,
+            "BurstInterShotInterval": 0,
+            "ShootMoveSpeed": 0.75,
+            "HitOnceAcrossAllBullets": false,
+            "CanCrit": true,
+            "AmmoConsumedPerShot": 1,
+            "DPS": 52.381,
+            "SustainedDPS": 29.204
         },
         "WeaponPowerScale": 1
     },
@@ -866,6 +1242,7 @@
         "MaxMoveSpeed": 7.9,
         "MoveAcceleration": 4,
         "Name": "The Doorman",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_doorman_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -903,8 +1280,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 38.095,
             "SustainedDPS": 25.806,
-            "NameKey": "citadel_weapon_hero_doorman_set",
-            "DescKey": "citadel_weapon_hero_doorman_set_desc",
+            "NameKey": "citadel_weapon_doorman_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_HeavyHitter",
                 "Attribute_EWeaponAttribute_MediumRange"
@@ -968,6 +1344,7 @@
         "MaxMoveSpeed": 6.9,
         "MoveAcceleration": 4,
         "Name": "Drifter",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_drifter_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -1005,12 +1382,108 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 44.218,
             "SustainedDPS": 30.248,
-            "NameKey": "citadel_weapon_hero_drifter_set",
-            "DescKey": "citadel_weapon_hero_drifter_set_desc",
+            "NameKey": "citadel_weapon_drifter_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_Spreadshot",
                 "Attribute_EWeaponAttribute_CloseRange"
             ]
+        },
+        "WeaponPowerScale": 1
+    },
+    "hero_druid": {
+        "AbilityResourceMax": 0,
+        "AbilityResourceRegenPerSecond": 0,
+        "AirDashDistanceInMeters": 8.0,
+        "AirDashDuration": 0.47,
+        "AirDashSpeed": 17.0,
+        "BaseHealthRegen": 2.0,
+        "BaseWeaponDamageIncrease": 0,
+        "BoundAbilities": {
+            "1": {
+                "Name": null,
+                "Key": "ability_druid_leech_seed"
+            },
+            "2": {
+                "Name": null,
+                "Key": "ability_druid_helicopter_seeds"
+            },
+            "3": {
+                "Name": null,
+                "Key": "ability_druid_sprout"
+            },
+            "4": {
+                "Name": null,
+                "Key": "ability_druid_ult"
+            }
+        },
+        "CritDamageBonusPercent": 0.0,
+        "CritDamageReceivedPercent": 0.0,
+        "CrouchSpeed": 4.75,
+        "GroundDashDistanceInMeters": 10.0,
+        "GroundDashDuration": 0.68,
+        "GroundDashSpeed": 14.7,
+        "HeavyMeleeDamage": 116,
+        "HeroBulletLifestealEffectiveness": 1.0,
+        "HeroSpiritLifestealEffectiveness": 1.0,
+        "InDevelopment": true,
+        "InHeroLabs": false,
+        "IsDisabled": true,
+        "IsRecommended": false,
+        "IsSelectable": true,
+        "LevelScaling": {
+            "BulletDamage": 0.124929,
+            "MaxHealth": 41.0,
+            "PowerIncreases": 1,
+            "TechPower": 1.1,
+            "LightMeleeDamage": 1.58,
+            "HeavyMeleeDamage": 3.6656,
+            "DPS": 1.322,
+            "SustainedDPS": 0.70251
+        },
+        "LightMeleeDamage": 50,
+        "Lore": "hero_druid_lore",
+        "MaxHealth": 780.0,
+        "MaxMoveSpeed": 7.2,
+        "MoveAcceleration": 4,
+        "Name": "Druid",
+        "OOCHealthRegen": 0,
+        "Playstyle": "hero_druid_playstyle",
+        "ProcBuildUpRateScale": 1,
+        "ReloadSpeed": 0,
+        "Role": "hero_druid_role",
+        "SpiritScaling": {},
+        "SprintSpeed": 1.6,
+        "Stamina": 3,
+        "StaminaCooldown": 4.5000045000045,
+        "StaminaRegenPerSecond": 0.222222,
+        "TechDuration": 0,
+        "TechRange": 0,
+        "Type": null,
+        "Weapon": {
+            "BulletSpeed": 571.5,
+            "BulletDamage": 5.5,
+            "RoundsPerSecond": 10.582,
+            "ClipSize": 30,
+            "ReloadTime": 2.5,
+            "ReloadMovespeed": 1.0,
+            "ReloadDelay": 0.0,
+            "ReloadSingle": false,
+            "FalloffStartRange": 19.99,
+            "FalloffEndRange": 57.51,
+            "FalloffStartScale": 1.0,
+            "FalloffEndScale": 0.1,
+            "FalloffBias": 0.5,
+            "BulletGravityScale": 0,
+            "BulletRadius": 0.0762,
+            "BulletsPerShot": 1,
+            "BulletsPerBurst": 1,
+            "BurstInterShotInterval": 0,
+            "ShootMoveSpeed": 0.75,
+            "HitOnceAcrossAllBullets": false,
+            "CanCrit": true,
+            "AmmoConsumedPerShot": 1,
+            "DPS": 58.201,
+            "SustainedDPS": 30.928
         },
         "WeaponPowerScale": 1
     },
@@ -1071,6 +1544,7 @@
         "MaxMoveSpeed": 6.7,
         "MoveAcceleration": 4,
         "Name": "Dynamo",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_dynamo_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -1108,8 +1582,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 48.0,
             "SustainedDPS": 33.158,
-            "NameKey": "citadel_weapon_hero_dynamo_set",
-            "DescKey": "citadel_weapon_hero_dynamo_set_desc",
+            "NameKey": "citadel_weapon_dynamo_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_MediumRange",
                 "Attribute_EWeaponAttribute_HeavyHitter",
@@ -1175,6 +1648,7 @@
         "MeleeResist": -5.0,
         "MoveAcceleration": 4,
         "Name": "Rem",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_familiar_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -1186,7 +1660,7 @@
         "StaminaRegenPerSecond": 0.222222,
         "TechDuration": 0,
         "TechRange": 0,
-        "Type": null,
+        "Type": "Mystic",
         "Weapon": {
             "BulletSpeed": 160.0,
             "BulletDamage": 16,
@@ -1212,8 +1686,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 61.539,
             "SustainedDPS": 38.662,
-            "NameKey": "citadel_weapon_hero_familiar_set",
-            "DescKey": "citadel_weapon_hero_familiar_set_desc",
+            "NameKey": "citadel_weapon_familiar_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_BurstFire",
                 "Attribute_EWeaponAttribute_MediumRange"
@@ -1278,6 +1751,7 @@
         "MaxMoveSpeed": 7.2,
         "MoveAcceleration": 4,
         "Name": "Apollo",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_fencer_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -1315,8 +1789,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 48.685,
             "SustainedDPS": 33.842,
-            "NameKey": "citadel_weapon_hero_fencer_set",
-            "DescKey": "citadel_weapon_hero_fencer_set_desc",
+            "NameKey": "citadel_weapon_fencer_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_MediumRange",
                 "Attribute_EWeaponAttribute_Projectile"
@@ -1381,6 +1854,7 @@
         "MaxMoveSpeed": 6.7,
         "MoveAcceleration": 4,
         "Name": "McGinnis",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_forge_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -1421,8 +1895,8 @@
             "SpinDeceleration": 0.25,
             "DPS": 72.381,
             "SustainedDPS": 45.424,
-            "NameKey": "citadel_weapon_hero_forge_set",
-            "DescKey": "citadel_weapon_hero_forge_set_desc",
+            "NameKey": "citadel_weapon_forge_set",
+            "DescKey": "citadel_weapon_forge_set_desc",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_RapidFire",
                 "Attribute_EWeaponAttribute_MediumRange"
@@ -1486,6 +1960,7 @@
         "MaxMoveSpeed": 7.2,
         "MoveAcceleration": 4,
         "Name": "Fortuna",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_fortuna_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -1525,8 +2000,6 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 61.111,
             "SustainedDPS": 31.731,
-            "NameKey": "citadel_weapon_hero_fortuna_set",
-            "DescKey": "citadel_weapon_hero_fortuna_set_desc",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_RapidFire",
                 "Attribute_EWeaponAttribute_MediumRange"
@@ -1590,6 +2063,7 @@
         "MaxMoveSpeed": 6.3,
         "MoveAcceleration": 4,
         "Name": "Victor",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_frank_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -1633,8 +2107,7 @@
             "SpinDeceleration": 1.0,
             "DPS": 70.175,
             "SustainedDPS": 44.28,
-            "NameKey": "citadel_weapon_hero_frank_set",
-            "DescKey": "citadel_weapon_hero_frank_set_desc",
+            "NameKey": "citadel_weapon_frank_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_MediumRange",
                 "Attribute_EWeaponAttribute_Projectile"
@@ -1681,7 +2154,7 @@
         "InHeroLabs": false,
         "IsDisabled": false,
         "IsRecommended": false,
-        "IsSelectable": false,
+        "IsSelectable": true,
         "LevelScaling": {
             "MaxHealth": 62.0,
             "PowerIncreases": 1,
@@ -1695,6 +2168,7 @@
         "MaxMoveSpeed": 7.2,
         "MoveAcceleration": 4,
         "Name": "Generic Person",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_genericperson_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -1731,9 +2205,7 @@
             "CanCrit": true,
             "AmmoConsumedPerShot": 1,
             "DPS": 58.0,
-            "SustainedDPS": 34.8,
-            "NameKey": "citadel_weapon_hero_genericperson_set",
-            "DescKey": "citadel_weapon_hero_genericperson_set_desc"
+            "SustainedDPS": 34.8
         },
         "WeaponPowerScale": 1
     },
@@ -1793,6 +2265,7 @@
         "MaxMoveSpeed": 6.3,
         "MoveAcceleration": 4,
         "Name": "Lady Geist",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_ghost_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -1830,8 +2303,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 43.809,
             "SustainedDPS": 27.247,
-            "NameKey": "citadel_weapon_hero_ghost_set",
-            "DescKey": "citadel_weapon_hero_ghost_set_desc",
+            "NameKey": "citadel_weapon_ghost_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_MediumRange",
                 "Attribute_EWeaponAttribute_HeavyHitter"
@@ -1895,6 +2367,7 @@
         "MaxMoveSpeed": 6.7,
         "MoveAcceleration": 4,
         "Name": "Seven",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_gigawatt_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -1932,8 +2405,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 62.974,
             "SustainedDPS": 42.766,
-            "NameKey": "citadel_weapon_hero_gigawatt_set",
-            "DescKey": "citadel_weapon_hero_gigawatt_set_desc",
+            "NameKey": "citadel_weapon_gigawatt_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_BurstFire",
                 "Attribute_EWeaponAttribute_MediumRange"
@@ -1997,6 +2469,7 @@
         "MaxMoveSpeed": 7.2,
         "MoveAcceleration": 4,
         "Name": "Graf",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_graf_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -2034,8 +2507,6 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 61.111,
             "SustainedDPS": 31.731,
-            "NameKey": "citadel_weapon_hero_graf_set",
-            "DescKey": "citadel_weapon_hero_graf_set_desc",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_BurstFire",
                 "Attribute_EWeaponAttribute_MediumRange"
@@ -2082,7 +2553,7 @@
         "InHeroLabs": false,
         "IsDisabled": true,
         "IsRecommended": false,
-        "IsSelectable": false,
+        "IsSelectable": true,
         "LevelScaling": {
             "BulletDamage": 0.924,
             "MaxHealth": 63.0,
@@ -2099,6 +2570,7 @@
         "MaxMoveSpeed": 7.2,
         "MoveAcceleration": 4,
         "Name": "Gunslinger",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_gunslinger_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -2136,8 +2608,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 99.999,
             "SustainedDPS": 39.56,
-            "NameKey": "citadel_weapon_hero_gunslinger_set",
-            "DescKey": "citadel_weapon_hero_gunslinger_set_desc"
+            "NameKey": "citadel_weapon_gunslinger_set"
         },
         "WeaponPowerScale": 1
     },
@@ -2197,6 +2668,7 @@
         "MaxMoveSpeed": 8.2,
         "MoveAcceleration": 4,
         "Name": "Haze",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_haze_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -2237,8 +2709,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 50.095,
             "SustainedDPS": 26.432,
-            "NameKey": "citadel_weapon_hero_haze_set",
-            "DescKey": "citadel_weapon_hero_haze_set_desc",
+            "NameKey": "citadel_weapon_haze_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_RapidFire",
                 "Attribute_EWeaponAttribute_CloseRange"
@@ -2302,6 +2773,7 @@
         "MaxMoveSpeed": 7.9,
         "MoveAcceleration": 4,
         "Name": "Vindicta",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_hornet_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -2343,8 +2815,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 53.377,
             "SustainedDPS": 32.079,
-            "NameKey": "citadel_weapon_hero_hornet_set",
-            "DescKey": "citadel_weapon_hero_hornet_set_desc",
+            "NameKey": "citadel_weapon_hornet_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_RapidFire",
                 "Attribute_EWeaponAttribute_LongRange"
@@ -2408,6 +2879,7 @@
         "MaxMoveSpeed": 6.7,
         "MoveAcceleration": 4,
         "Name": "Infernus",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_inferno_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -2445,8 +2917,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 52.381,
             "SustainedDPS": 29.204,
-            "NameKey": "citadel_weapon_hero_inferno_set",
-            "DescKey": "citadel_weapon_hero_inferno_set_desc",
+            "NameKey": "citadel_weapon_inferno_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_RapidFire",
                 "Attribute_EWeaponAttribute_MediumRange"
@@ -2493,7 +2964,7 @@
         "InHeroLabs": false,
         "IsDisabled": true,
         "IsRecommended": false,
-        "IsSelectable": false,
+        "IsSelectable": true,
         "LevelScaling": {
             "MaxHealth": 63.0,
             "PowerIncreases": 1,
@@ -2507,6 +2978,7 @@
         "MaxMoveSpeed": 7.2,
         "MoveAcceleration": 4,
         "Name": "Kali",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_kali_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -2544,8 +3016,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 23.178,
             "SustainedDPS": 17.965,
-            "NameKey": "citadel_weapon_hero_kali_set",
-            "DescKey": "citadel_weapon_hero_kali_set_desc"
+            "NameKey": "citadel_weapon_kali_set"
         },
         "WeaponPowerScale": 1
     },
@@ -2606,6 +3077,7 @@
         "MaxMoveSpeed": 6.7,
         "MoveAcceleration": 4,
         "Name": "Kelvin",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_kelvin_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -2643,8 +3115,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 70.857,
             "SustainedDPS": 41.597,
-            "NameKey": "citadel_weapon_hero_kelvin_set",
-            "DescKey": "citadel_weapon_hero_kelvin_set_desc",
+            "NameKey": "citadel_weapon_kelvin_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_MediumRange",
                 "Attribute_EWeaponAttribute_HeavyHitter",
@@ -2709,6 +3180,7 @@
         "MaxMoveSpeed": 8.0,
         "MoveAcceleration": 4,
         "Name": "Mo & Krill",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_krill_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -2746,8 +3218,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 59.682,
             "SustainedDPS": 34.182,
-            "NameKey": "citadel_weapon_hero_krill_set",
-            "DescKey": "citadel_weapon_hero_krill_set_desc",
+            "NameKey": "citadel_weapon_krill_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_RapidFire",
                 "Attribute_EWeaponAttribute_Spreadshot"
@@ -2811,6 +3282,7 @@
         "MaxMoveSpeed": 7.2,
         "MoveAcceleration": 4,
         "Name": "Lash",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_lash_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -2849,8 +3321,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 49.329,
             "SustainedDPS": 33.5,
-            "NameKey": "citadel_weapon_hero_lash_set",
-            "DescKey": "citadel_weapon_hero_lash_set_desc",
+            "NameKey": "citadel_weapon_lash_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_BurstFire",
                 "Attribute_EWeaponAttribute_MediumRange"
@@ -2864,7 +3335,7 @@
         "AirDashDistanceInMeters": 8.0,
         "AirDashDuration": 0.47,
         "AirDashSpeed": 17.0,
-        "BaseHealthRegen": 2.0,
+        "BaseHealthRegen": 1.0,
         "BaseWeaponDamageIncrease": 0,
         "BoundAbilities": {
             "1": {
@@ -2900,6 +3371,7 @@
         "IsSelectable": true,
         "LevelScaling": {
             "BulletDamage": 0.55,
+            "BulletDamageAltFire": 0.55,
             "MaxHealth": 38.0,
             "PowerIncreases": 1,
             "TechPower": 1.3,
@@ -2914,6 +3386,7 @@
         "MaxMoveSpeed": 7.2,
         "MoveAcceleration": 4,
         "Name": "Sinclair",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_magician_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -2930,15 +3403,15 @@
         "Type": "Mystic",
         "Weapon": {
             "BulletSpeed": 300.0,
-            "BulletDamage": 17.76,
+            "BulletDamage": 16.5,
             "RoundsPerSecond": 2.7211,
             "ClipSize": 16,
             "ReloadTime": 2.5,
             "ReloadMovespeed": 1.0,
             "ReloadDelay": 0.0,
             "ReloadSingle": false,
-            "FalloffStartRange": 25.4,
-            "FalloffEndRange": 60.96,
+            "FalloffStartRange": 20.0,
+            "FalloffEndRange": 60.0,
             "FalloffStartScale": 1.0,
             "FalloffEndScale": 0.3,
             "FalloffBias": 0.5,
@@ -2951,10 +3424,9 @@
             "HitOnceAcrossAllBullets": false,
             "CanCrit": true,
             "AmmoConsumedPerShot": 1,
-            "DPS": 48.327,
-            "SustainedDPS": 33.909,
-            "NameKey": "citadel_weapon_hero_magician_set",
-            "DescKey": "citadel_weapon_hero_magician_set_desc",
+            "DPS": 44.898,
+            "SustainedDPS": 31.504,
+            "NameKey": "citadel_weapon_magician_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_BurstFire",
                 "Attribute_EWeaponAttribute_LongRange",
@@ -3019,6 +3491,7 @@
         "MaxMoveSpeed": 7.0,
         "MoveAcceleration": 4,
         "Name": "Mirage",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_mirage_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -3056,8 +3529,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 40.272,
             "SustainedDPS": 27.925,
-            "NameKey": "citadel_weapon_hero_mirage_set",
-            "DescKey": "citadel_weapon_hero_mirage_set_desc",
+            "NameKey": "citadel_weapon_mirage_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_MediumRange",
                 "Attribute_EWeaponAttribute_HeavyHitter"
@@ -3121,6 +3593,7 @@
         "MaxMoveSpeed": 6.8,
         "MoveAcceleration": 4,
         "Name": "Calico",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_nano_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -3158,8 +3631,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 78.857,
             "SustainedDPS": 38.812,
-            "NameKey": "citadel_weapon_hero_nano_set",
-            "DescKey": "citadel_weapon_hero_nano_set_desc",
+            "NameKey": "citadel_weapon_nano_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_Spreadshot",
                 "Attribute_EWeaponAttribute_CloseRange"
@@ -3193,7 +3665,6 @@
                 "Key": "ability_necro_gravestone"
             }
         },
-        "BuildUpRate": -50.0,
         "BulletLifesteal": 8.0,
         "CritDamageBonusPercent": 0.0,
         "CritDamageReceivedPercent": 0.0,
@@ -3225,6 +3696,7 @@
         "MaxMoveSpeed": 7.0,
         "MoveAcceleration": 4,
         "Name": "Graves",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_necro_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -3236,7 +3708,7 @@
         "StaminaRegenPerSecond": 0.222222,
         "TechDuration": 0,
         "TechRange": 0,
-        "Type": "Marksman",
+        "Type": "Mystic",
         "Weapon": {
             "BulletSpeed": 635.0,
             "BulletDamage": 3.6,
@@ -3262,12 +3734,189 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 35.294,
             "SustainedDPS": 20.93,
-            "NameKey": "citadel_weapon_hero_necro_set",
-            "DescKey": "citadel_weapon_hero_necro_set_desc",
+            "NameKey": "citadel_weapon_necro_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_BeamWeapon",
                 "Attribute_EWeaponAttribute_CloseRange"
             ]
+        },
+        "WeaponPowerScale": 1
+    },
+    "hero_nurse": {
+        "AbilityResourceMax": 0,
+        "AbilityResourceRegenPerSecond": 0,
+        "AirDashDistanceInMeters": 8.0,
+        "AirDashDuration": 0.47,
+        "AirDashSpeed": 17.0,
+        "BaseHealthRegen": 2.0,
+        "BaseWeaponDamageIncrease": 0,
+        "BoundAbilities": {},
+        "CritDamageBonusPercent": 0.0,
+        "CritDamageReceivedPercent": 0.0,
+        "CrouchSpeed": 4.75,
+        "GroundDashDistanceInMeters": 10.0,
+        "GroundDashDuration": 0.68,
+        "GroundDashSpeed": 14.7,
+        "HeavyMeleeDamage": 116,
+        "HeroBulletLifestealEffectiveness": 1.0,
+        "HeroSpiritLifestealEffectiveness": 1.0,
+        "InDevelopment": false,
+        "InHeroLabs": false,
+        "IsDisabled": false,
+        "IsRecommended": false,
+        "IsSelectable": true,
+        "LevelScaling": {
+            "BulletDamage": 0.53176,
+            "MaxHealth": 31.0,
+            "PowerIncreases": 1,
+            "TechPower": 1.1,
+            "LightMeleeDamage": 1.58,
+            "HeavyMeleeDamage": 3.6656,
+            "DPS": 5.0644,
+            "SustainedDPS": 2.8235
+        },
+        "LightMeleeDamage": 50,
+        "Lore": "hero_nurse_lore",
+        "MaxHealth": 780.0,
+        "MaxMoveSpeed": 7.2,
+        "MoveAcceleration": 4,
+        "Name": "Nurse Harrow",
+        "OOCHealthRegen": 0,
+        "Playstyle": "hero_nurse_playstyle",
+        "ProcBuildUpRateScale": 1,
+        "ReloadSpeed": 0,
+        "Role": "hero_nurse_role",
+        "SpiritScaling": {},
+        "SprintSpeed": 1.6,
+        "Stamina": 3,
+        "StaminaCooldown": 4.5000045000045,
+        "StaminaRegenPerSecond": 0.222222,
+        "TechDuration": 0,
+        "TechRange": 0,
+        "Type": null,
+        "Weapon": {
+            "BulletSpeed": 660.4,
+            "BulletDamage": 5.5,
+            "RoundsPerSecond": 9.5238,
+            "ClipSize": 27,
+            "ReloadTime": 2.25,
+            "ReloadMovespeed": 1.0,
+            "ReloadDelay": 0.0,
+            "ReloadSingle": false,
+            "FalloffStartRange": 18.0,
+            "FalloffEndRange": 55.0,
+            "FalloffStartScale": 1.0,
+            "FalloffEndScale": 0.1,
+            "FalloffBias": 0.5,
+            "BulletGravityScale": 0.8,
+            "BulletRadius": 0.1016,
+            "BulletsPerShot": 1,
+            "BulletsPerBurst": 1,
+            "BurstInterShotInterval": 0,
+            "ShootMoveSpeed": 0.75,
+            "HitOnceAcrossAllBullets": false,
+            "CanCrit": true,
+            "AmmoConsumedPerShot": 1,
+            "DPS": 52.381,
+            "SustainedDPS": 29.204
+        },
+        "WeaponPowerScale": 1
+    },
+    "hero_opera": {
+        "AbilityResourceMax": 0,
+        "AbilityResourceRegenPerSecond": 0,
+        "AirDashDistanceInMeters": 8.0,
+        "AirDashDuration": 0.47,
+        "AirDashSpeed": 17.0,
+        "BaseHealthRegen": 2.0,
+        "BaseWeaponDamageIncrease": 0,
+        "BoundAbilities": {
+            "1": {
+                "Name": null,
+                "Key": "ability_opera_ability01"
+            },
+            "2": {
+                "Name": null,
+                "Key": "ability_opera_ability02"
+            },
+            "3": {
+                "Name": null,
+                "Key": "ability_opera_ability03"
+            },
+            "4": {
+                "Name": null,
+                "Key": "ability_opera_ult"
+            }
+        },
+        "CritDamageBonusPercent": 0.0,
+        "CritDamageReceivedPercent": 0.0,
+        "CrouchSpeed": 4.75,
+        "GroundDashDistanceInMeters": 10.0,
+        "GroundDashDuration": 0.68,
+        "GroundDashSpeed": 14.7,
+        "HeavyMeleeDamage": 116,
+        "HeroBulletLifestealEffectiveness": 1.0,
+        "HeroSpiritLifestealEffectiveness": 1.0,
+        "InDevelopment": true,
+        "InHeroLabs": false,
+        "IsDisabled": true,
+        "IsRecommended": false,
+        "IsSelectable": true,
+        "LevelScaling": {
+            "BulletDamage": 0.07,
+            "MaxHealth": 66.0,
+            "PowerIncreases": 1,
+            "TechPower": 1.1,
+            "LightMeleeDamage": 1.58,
+            "HeavyMeleeDamage": 3.6656,
+            "DPS": 0.77777,
+            "SustainedDPS": 0.40384
+        },
+        "LightMeleeDamage": 50,
+        "Lore": "hero_opera_lore",
+        "MaxHealth": 780.0,
+        "MaxMoveSpeed": 7.2,
+        "MoveAcceleration": 4,
+        "Name": "Opera",
+        "OOCHealthRegen": 0,
+        "Playstyle": "hero_opera_playstyle",
+        "ProcBuildUpRateScale": 1,
+        "ReloadSpeed": 0,
+        "Role": "hero_opera_role",
+        "SpiritScaling": {},
+        "SprintSpeed": 1.6,
+        "Stamina": 3,
+        "StaminaCooldown": 4.5000045000045,
+        "StaminaRegenPerSecond": 0.222222,
+        "TechDuration": 0,
+        "TechRange": 0,
+        "Type": null,
+        "Weapon": {
+            "BulletSpeed": 571.5,
+            "BulletDamage": 5.5,
+            "RoundsPerSecond": 11.111,
+            "ClipSize": 30,
+            "ReloadTime": 2.5,
+            "ReloadMovespeed": 1.0,
+            "ReloadDelay": 0.0,
+            "ReloadSingle": false,
+            "FalloffStartRange": 19.99,
+            "FalloffEndRange": 57.51,
+            "FalloffStartScale": 1.0,
+            "FalloffEndScale": 0.1,
+            "FalloffBias": 0.5,
+            "BulletGravityScale": 0,
+            "BulletRadius": 0.0762,
+            "BulletsPerShot": 1,
+            "BulletsPerBurst": 1,
+            "BurstInterShotInterval": 0,
+            "ShootMoveSpeed": 0.75,
+            "HitOnceAcrossAllBullets": false,
+            "CanCrit": true,
+            "AmmoConsumedPerShot": 1,
+            "DPS": 61.111,
+            "SustainedDPS": 31.731,
+            "NameKey": "citadel_weapon_opera_set"
         },
         "WeaponPowerScale": 1
     },
@@ -3310,7 +3959,7 @@
         "InHeroLabs": false,
         "IsDisabled": true,
         "IsRecommended": false,
-        "IsSelectable": false,
+        "IsSelectable": true,
         "LevelScaling": {
             "BulletDamage": 0.803,
             "MaxHealth": 51.0,
@@ -3327,6 +3976,7 @@
         "MaxMoveSpeed": 7.2,
         "MoveAcceleration": 4,
         "Name": "Raven",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_operative_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -3364,8 +4014,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 51.429,
             "SustainedDPS": 31.835,
-            "NameKey": "citadel_weapon_hero_operative_set",
-            "DescKey": "citadel_weapon_hero_operative_set_desc",
+            "NameKey": "citadel_weapon_operative_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_RapidFire",
                 "Attribute_EWeaponAttribute_MediumRange"
@@ -3429,6 +4078,7 @@
         "MaxMoveSpeed": 6.3,
         "MoveAcceleration": 4,
         "Name": "Grey Talon",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_orion_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -3471,8 +4121,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 39.184,
             "SustainedDPS": 31.847,
-            "NameKey": "citadel_weapon_hero_orion_set",
-            "DescKey": "citadel_weapon_hero_orion_set_desc",
+            "NameKey": "citadel_weapon_orion_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_MediumRange",
                 "Attribute_EWeaponAttribute_HeavyHitter",
@@ -3537,6 +4186,7 @@
         "MaxMoveSpeed": 6.4,
         "MoveAcceleration": 4,
         "Name": "Venator",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_priest_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -3577,8 +4227,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 63.492,
             "SustainedDPS": 37.942,
-            "NameKey": "citadel_weapon_hero_priest_set",
-            "DescKey": "citadel_weapon_hero_priest_set_desc",
+            "NameKey": "citadel_weapon_priest_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_RapidFire",
                 "Attribute_EWeaponAttribute_MediumRange"
@@ -3642,6 +4291,7 @@
         "MaxMoveSpeed": 7.0,
         "MoveAcceleration": 4,
         "Name": "Billy",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_punkgoat_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -3679,10 +4329,111 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 74.12,
             "SustainedDPS": 34.679,
-            "NameKey": "citadel_weapon_hero_punkgoat_set",
-            "DescKey": "citadel_weapon_hero_punkgoat_set_desc",
+            "NameKey": "citadel_weapon_punkgoat_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_CloseRange"
+            ]
+        },
+        "WeaponPowerScale": 1
+    },
+    "hero_ratking": {
+        "AbilityResourceMax": 0,
+        "AbilityResourceRegenPerSecond": 0,
+        "AirDashDistanceInMeters": 8.0,
+        "AirDashDuration": 0.51,
+        "AirDashSpeed": 15.7,
+        "BaseHealthRegen": 2.0,
+        "BaseWeaponDamageIncrease": 0,
+        "BoundAbilities": {
+            "1": {
+                "Name": "Scrap Grenade",
+                "Key": "ability_ratking_scrap_grenade"
+            },
+            "2": {
+                "Name": "Rat Swarm",
+                "Key": "ability_ratking_ratnibble"
+            },
+            "3": {
+                "Name": "Royal Pestments",
+                "Key": "ability_ratking_ratarmor"
+            },
+            "4": {
+                "Name": "Rule, Ratannia!",
+                "Key": "ability_ratking_standard_bearer"
+            }
+        },
+        "CritDamageBonusPercent": 0.0,
+        "CritDamageReceivedPercent": 0.0,
+        "CrouchSpeed": 4.75,
+        "GroundDashDistanceInMeters": 10.0,
+        "GroundDashDuration": 0.72,
+        "GroundDashSpeed": 13.9,
+        "HeavyMeleeDamage": 116,
+        "HeroBulletLifestealEffectiveness": 0.75,
+        "HeroSpiritLifestealEffectiveness": 0.75,
+        "InDevelopment": false,
+        "InHeroLabs": false,
+        "IsDisabled": false,
+        "IsRecommended": false,
+        "IsSelectable": true,
+        "LevelScaling": {
+            "BulletDamage": 0.18,
+            "MaxHealth": 50.0,
+            "PowerIncreases": 1,
+            "TechPower": 1.1,
+            "LightMeleeDamage": 1.58,
+            "HeavyMeleeDamage": 3.6656,
+            "DPS": 1.8,
+            "SustainedDPS": 1.1368
+        },
+        "LightMeleeDamage": 50,
+        "Lore": "hero_ratking_lore",
+        "MaxHealth": 800,
+        "MaxMoveSpeed": 6.8,
+        "MoveAcceleration": 4,
+        "Name": "Rat King",
+        "OOCHealthRegen": 0,
+        "Playstyle": "hero_ratking_playstyle",
+        "ProcBuildUpRateScale": 1,
+        "ReloadSpeed": 0,
+        "Role": "hero_ratking_role",
+        "SpiritScaling": {},
+        "SprintSpeed": 1.6,
+        "Stamina": 3,
+        "StaminaCooldown": 3.8022813688212924,
+        "StaminaRegenPerSecond": 0.263,
+        "TechDuration": 0,
+        "TechRange": 0,
+        "Type": "Brawler",
+        "Weapon": {
+            "BulletSpeed": 203.2,
+            "BulletDamage": 6.0,
+            "RoundsPerSecond": 5.0,
+            "ClipSize": 24,
+            "ReloadTime": 2.8,
+            "ReloadMovespeed": 1.0,
+            "ReloadDelay": 0.0,
+            "ReloadSingle": false,
+            "FalloffStartRange": 20.0,
+            "FalloffEndRange": 50.0,
+            "FalloffStartScale": 1.0,
+            "FalloffEndScale": 0.1,
+            "FalloffBias": 0.5,
+            "BulletGravityScale": 0.0,
+            "BulletRadius": 0.127,
+            "BulletsPerShot": 2,
+            "BulletsPerBurst": 1,
+            "BurstInterShotInterval": 0.1,
+            "ShootMoveSpeed": 0.75,
+            "HitOnceAcrossAllBullets": false,
+            "CanCrit": true,
+            "AmmoConsumedPerShot": 1,
+            "DPS": 60.0,
+            "SustainedDPS": 37.895,
+            "NameKey": "citadel_weapon_ratking_set",
+            "WeaponTypes": [
+                "Attribute_EWeaponAttribute_RapidFire",
+                "Attribute_EWeaponAttribute_Spreadshot"
             ]
         },
         "WeaponPowerScale": 1
@@ -3726,7 +4477,7 @@
         "InHeroLabs": false,
         "IsDisabled": true,
         "IsRecommended": false,
-        "IsSelectable": false,
+        "IsSelectable": true,
         "LevelScaling": {
             "MaxHealth": 63.0,
             "PowerIncreases": 1,
@@ -3740,6 +4491,7 @@
         "MaxMoveSpeed": 7.2,
         "MoveAcceleration": 4,
         "Name": "Rutger",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_rutger_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -3777,8 +4529,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 72.001,
             "SustainedDPS": 36.878,
-            "NameKey": "citadel_weapon_hero_rutger_set",
-            "DescKey": "citadel_weapon_hero_rutger_set_desc"
+            "NameKey": "citadel_weapon_rutger_set"
         },
         "WeaponPowerScale": 1
     },
@@ -3821,7 +4572,7 @@
         "InHeroLabs": false,
         "IsDisabled": true,
         "IsRecommended": false,
-        "IsSelectable": false,
+        "IsSelectable": true,
         "LevelScaling": {
             "BulletDamage": 0.077,
             "MaxHealth": 63.0,
@@ -3838,6 +4589,7 @@
         "MaxMoveSpeed": 7.2,
         "MoveAcceleration": 4,
         "Name": "Shield Guy",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_shieldguy_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -3874,9 +4626,7 @@
             "CanCrit": true,
             "AmmoConsumedPerShot": 1,
             "DPS": 61.111,
-            "SustainedDPS": 31.731,
-            "NameKey": "citadel_weapon_hero_shieldguy_set",
-            "DescKey": "citadel_weapon_hero_shieldguy_set_desc"
+            "SustainedDPS": 31.731
         },
         "WeaponPowerScale": 1
     },
@@ -3937,6 +4687,7 @@
         "MaxMoveSpeed": 6.5,
         "MoveAcceleration": 4,
         "Name": "Shiv",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_shiv_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -3974,8 +4725,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 52.246,
             "SustainedDPS": 34.647,
-            "NameKey": "citadel_weapon_hero_shiv_set",
-            "DescKey": "citadel_weapon_hero_shiv_set_desc",
+            "NameKey": "citadel_weapon_shiv_set",
             "AltFire": {
                 "BulletSpeed": 609.6,
                 "BulletDamage": 4.53,
@@ -4067,6 +4817,7 @@
         "MaxMoveSpeed": 7.2,
         "MoveAcceleration": 4,
         "Name": "Skyrunner",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_skyrunner_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -4105,8 +4856,6 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 52.91,
             "SustainedDPS": 27.684,
-            "NameKey": "citadel_weapon_hero_skyrunner_set",
-            "DescKey": "citadel_weapon_hero_skyrunner_set_desc",
             "AltFire": {
                 "BulletSpeed": 108.0,
                 "BulletDamage": 5.0,
@@ -4181,7 +4930,7 @@
         "InHeroLabs": false,
         "IsDisabled": true,
         "IsRecommended": false,
-        "IsSelectable": false,
+        "IsSelectable": true,
         "LevelScaling": {
             "BulletDamage": 0.22,
             "MaxHealth": 54.0,
@@ -4198,6 +4947,7 @@
         "MaxMoveSpeed": 7.2,
         "MoveAcceleration": 4,
         "Name": "Fathom",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_slork_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -4235,8 +4985,8 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 55.999,
             "SustainedDPS": 31.334,
-            "NameKey": "citadel_weapon_hero_slork_set",
-            "DescKey": "citadel_weapon_hero_slork_set_desc",
+            "NameKey": "citadel_weapon_slork_set",
+            "DescKey": "citadel_weapon_slork_set_desc",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_Spreadshot",
                 "Attribute_EWeaponAttribute_CloseRange"
@@ -4300,6 +5050,7 @@
         "MaxMoveSpeed": 6.8,
         "MoveAcceleration": 4,
         "Name": "Swan",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_swan_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -4337,8 +5088,6 @@
             "AmmoConsumedPerShot": 0,
             "DPS": 28.86,
             "SustainedDPS": 15.174,
-            "NameKey": "citadel_weapon_hero_swan_set",
-            "DescKey": "citadel_weapon_hero_swan_set_desc",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_BurstFire",
                 "Attribute_EWeaponAttribute_MediumRange"
@@ -4402,6 +5151,7 @@
         "MaxMoveSpeed": 7.2,
         "MoveAcceleration": 4,
         "Name": "Pocket",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_synth_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -4440,8 +5190,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 57.068,
             "SustainedDPS": 38.344,
-            "NameKey": "citadel_weapon_hero_synth_set",
-            "DescKey": "citadel_weapon_hero_synth_set_desc",
+            "NameKey": "citadel_weapon_synth_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_Spreadshot",
                 "Attribute_EWeaponAttribute_CloseRange"
@@ -4455,7 +5204,7 @@
         "AirDashDistanceInMeters": 8.0,
         "AirDashDuration": 0.47,
         "AirDashSpeed": 17.0,
-        "BaseHealthRegen": 2.0,
+        "BaseHealthRegen": 0.0,
         "BaseWeaponDamageIncrease": 0,
         "BoundAbilities": {
             "1": {
@@ -4484,17 +5233,20 @@
         "HeavyMeleeDamage": 116,
         "HeroBulletLifestealEffectiveness": 1.0,
         "HeroSpiritLifestealEffectiveness": 1.0,
-        "InDevelopment": true,
+        "InDevelopment": false,
         "InHeroLabs": false,
         "IsDisabled": false,
         "IsRecommended": false,
-        "IsSelectable": false,
+        "IsSelectable": true,
         "LevelScaling": {
-            "MaxHealth": 62.0,
+            "BulletDamage": 0.22,
+            "MaxHealth": 54.0,
             "PowerIncreases": 1,
             "TechPower": 1.1,
             "LightMeleeDamage": 1.58,
-            "HeavyMeleeDamage": 3.6656
+            "HeavyMeleeDamage": 3.6656,
+            "DPS": 1.1,
+            "SustainedDPS": 0.66
         },
         "LightMeleeDamage": 50,
         "Lore": "hero_targetdummy_lore",
@@ -4502,6 +5254,7 @@
         "MaxMoveSpeed": 7.2,
         "MoveAcceleration": 4,
         "Name": "TargetDummy",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_targetdummy_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -4539,8 +5292,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 58.0,
             "SustainedDPS": 34.8,
-            "NameKey": "citadel_weapon_hero_targetdummy_set",
-            "DescKey": "citadel_weapon_hero_targetdummy_set_desc"
+            "NameKey": "citadel_weapon_targetdummy_set"
         },
         "WeaponPowerScale": 1
     },
@@ -4601,6 +5353,7 @@
         "MaxMoveSpeed": 7.2,
         "MoveAcceleration": 4,
         "Name": "Ivy",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_tengu_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -4638,11 +5391,68 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 60.542,
             "SustainedDPS": 30.157,
-            "NameKey": "citadel_weapon_hero_tengu_set",
-            "DescKey": "citadel_weapon_hero_tengu_set_desc",
+            "NameKey": "citadel_weapon_tengu_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_RapidFire",
                 "Attribute_EWeaponAttribute_MediumRange"
+            ]
+        },
+        "WeaponPowerScale": 1
+    },
+    "hero_testhero": {
+        "AbilityResourceMax": 0,
+        "AbilityResourceRegenPerSecond": 0,
+        "AirDashDistanceInMeters": 8.0,
+        "AirDashDuration": 0.43,
+        "AirDashSpeed": 18.6,
+        "BaseHealthRegen": 2.0,
+        "BaseWeaponDamageIncrease": 0,
+        "BoundAbilities": {},
+        "CritDamageBonusPercent": 0.0,
+        "CritDamageReceivedPercent": 0.0,
+        "CrouchSpeed": 4.75,
+        "GroundDashDistanceInMeters": 10.0,
+        "GroundDashDuration": 0.62,
+        "GroundDashSpeed": 16.1,
+        "HeavyMeleeDamage": 116,
+        "HeroBulletLifestealEffectiveness": 1.0,
+        "HeroSpiritLifestealEffectiveness": 1.0,
+        "InDevelopment": true,
+        "InHeroLabs": false,
+        "IsDisabled": true,
+        "IsRecommended": false,
+        "IsSelectable": true,
+        "LevelScaling": {
+            "BulletDamage": 0.043,
+            "MaxHealth": 40.0,
+            "PowerIncreases": 1,
+            "TechPower": 1.1,
+            "LightMeleeDamage": 1.58,
+            "HeavyMeleeDamage": 2.9092
+        },
+        "LightMeleeDamage": 63,
+        "Lore": "hero_testhero_lore",
+        "MaxHealth": 730.0,
+        "MaxMoveSpeed": 6.8,
+        "MoveAcceleration": 4,
+        "Name": null,
+        "OOCHealthRegen": 0,
+        "Playstyle": "hero_testhero_playstyle",
+        "ProcBuildUpRateScale": 1,
+        "ReloadSpeed": 0,
+        "Role": "hero_testhero_role",
+        "SpiritScaling": {},
+        "SprintSpeed": 1.6,
+        "Stamina": 3,
+        "StaminaCooldown": 4.5000045000045,
+        "StaminaRegenPerSecond": 0.222222,
+        "TechDuration": 0,
+        "TechRange": 0,
+        "Type": "Assassin",
+        "Weapon": {
+            "WeaponTypes": [
+                "Attribute_EWeaponAttribute_Spreadshot",
+                "Attribute_EWeaponAttribute_CloseRange"
             ]
         },
         "WeaponPowerScale": 1
@@ -4657,19 +5467,19 @@
         "BaseWeaponDamageIncrease": 0,
         "BoundAbilities": {
             "1": {
-                "Name": "Shatter Cannon",
+                "Name": null,
                 "Key": "thumper_ability_1"
             },
             "2": {
-                "Name": "Spike Strip",
+                "Name": null,
                 "Key": "thumper_ability_2"
             },
             "3": {
-                "Name": "Badger Drone",
+                "Name": null,
                 "Key": "thumper_ability_3"
             },
             "4": {
-                "Name": "Vortex",
+                "Name": null,
                 "Key": "thumper_ability_4"
             }
         },
@@ -4686,7 +5496,7 @@
         "InHeroLabs": false,
         "IsDisabled": true,
         "IsRecommended": false,
-        "IsSelectable": false,
+        "IsSelectable": true,
         "LevelScaling": {
             "MaxHealth": 63.0,
             "PowerIncreases": 1,
@@ -4700,6 +5510,7 @@
         "MaxMoveSpeed": 7.2,
         "MoveAcceleration": 4,
         "Name": "Thumper",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_thumper_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -4736,107 +5547,7 @@
             "CanCrit": true,
             "AmmoConsumedPerShot": 1,
             "DPS": 57.001,
-            "SustainedDPS": 36.0,
-            "NameKey": "citadel_weapon_hero_thumper_set",
-            "DescKey": "citadel_weapon_hero_thumper_set_desc"
-        },
-        "WeaponPowerScale": 1
-    },
-    "hero_tokamak": {
-        "AbilityResourceMax": 0,
-        "AbilityResourceRegenPerSecond": 0,
-        "AirDashDistanceInMeters": 8.0,
-        "AirDashDuration": 0.47,
-        "AirDashSpeed": 17.0,
-        "BaseHealthRegen": 2.0,
-        "BaseWeaponDamageIncrease": 0,
-        "BoundAbilities": {
-            "1": {
-                "Name": "Hot Shot",
-                "Key": "tokamak_hot_shot"
-            },
-            "2": {
-                "Name": "Dying Star",
-                "Key": "tokamak_dying_star"
-            },
-            "3": {
-                "Name": "Blinding Radiance",
-                "Key": "tokamak_radiance"
-            },
-            "4": {
-                "Name": "Pulse Cannon",
-                "Key": "tokamak_crimson_cannon"
-            }
-        },
-        "CritDamageBonusPercent": 0.0,
-        "CritDamageReceivedPercent": 0.0,
-        "CrouchSpeed": 4.75,
-        "GroundDashDistanceInMeters": 10.0,
-        "GroundDashDuration": 0.68,
-        "GroundDashSpeed": 14.7,
-        "HeavyMeleeDamage": 116,
-        "HeroBulletLifestealEffectiveness": 1.0,
-        "HeroSpiritLifestealEffectiveness": 1.0,
-        "InDevelopment": true,
-        "InHeroLabs": false,
-        "IsDisabled": true,
-        "IsRecommended": false,
-        "IsSelectable": false,
-        "LevelScaling": {
-            "BulletDamage": 0.418,
-            "MaxHealth": 69.0,
-            "PowerIncreases": 1,
-            "TechPower": 1.1,
-            "LightMeleeDamage": 1.58,
-            "HeavyMeleeDamage": 3.6656,
-            "DPS": 3.4833,
-            "SustainedDPS": 2.09
-        },
-        "LightMeleeDamage": 50,
-        "Lore": "hero_tokamak_lore",
-        "MaxHealth": 780.0,
-        "MaxMoveSpeed": 7.2,
-        "MoveAcceleration": 4,
-        "Name": "Tokamak",
-        "Playstyle": "hero_tokamak_playstyle",
-        "ProcBuildUpRateScale": 1,
-        "ReloadSpeed": 0,
-        "Role": "hero_tokamak_role",
-        "SpiritScaling": {},
-        "SprintSpeed": 1.6,
-        "Stamina": 3,
-        "StaminaCooldown": 4.5000045000045,
-        "StaminaRegenPerSecond": 0.222222,
-        "TechDuration": 0,
-        "TechRange": 0,
-        "Type": null,
-        "Weapon": {
-            "BulletSpeed": 406.4,
-            "BulletDamage": 8.2,
-            "RoundsPerSecond": 8.3333,
-            "ClipSize": 50,
-            "ReloadTime": 4.0,
-            "ReloadMovespeed": 1.0,
-            "ReloadDelay": 0.0,
-            "ReloadSingle": false,
-            "FalloffStartRange": 19.99,
-            "FalloffEndRange": 57.51,
-            "FalloffStartScale": 1.0,
-            "FalloffEndScale": 0.1,
-            "FalloffBias": 0.5,
-            "BulletGravityScale": 0.8,
-            "BulletRadius": 0.0762,
-            "BulletsPerShot": 1,
-            "BulletsPerBurst": 1,
-            "BurstInterShotInterval": 0,
-            "ShootMoveSpeed": 0.75,
-            "HitOnceAcrossAllBullets": false,
-            "CanCrit": true,
-            "AmmoConsumedPerShot": 1,
-            "DPS": 68.333,
-            "SustainedDPS": 41.0,
-            "NameKey": "citadel_weapon_hero_tokamak_set",
-            "DescKey": "citadel_weapon_hero_tokamak_set_desc"
+            "SustainedDPS": 36.0
         },
         "WeaponPowerScale": 1
     },
@@ -4879,7 +5590,7 @@
         "InHeroLabs": false,
         "IsDisabled": true,
         "IsRecommended": false,
-        "IsSelectable": false,
+        "IsSelectable": true,
         "LevelScaling": {
             "BulletDamage": 0.22,
             "MaxHealth": 67.0,
@@ -4896,6 +5607,7 @@
         "MaxMoveSpeed": 7.2,
         "MoveAcceleration": 4,
         "Name": "Trapper",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_trapper_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -4935,8 +5647,7 @@
             "ExplosionRadius": 0.0,
             "DPS": 86.668,
             "SustainedDPS": 54.594,
-            "NameKey": "citadel_weapon_hero_trapper_set",
-            "DescKey": "citadel_weapon_hero_trapper_set_desc",
+            "NameKey": "citadel_weapon_trapper_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_MediumRange",
                 "Attribute_EWeaponAttribute_Projectile"
@@ -5003,6 +5714,7 @@
         "MaxMoveSpeed": 6.2,
         "MoveAcceleration": 4,
         "Name": "Celeste",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_unicorn_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -5014,7 +5726,7 @@
         "StaminaRegenPerSecond": 0.18867,
         "TechDuration": 0,
         "TechRange": 0,
-        "Type": "Marksman",
+        "Type": "Mystic",
         "Weapon": {
             "BulletSpeed": 50.0,
             "BulletDamage": 18,
@@ -5041,8 +5753,7 @@
             "ExplosionRadius": 0.0,
             "DPS": 31.034,
             "SustainedDPS": 21.686,
-            "NameKey": "citadel_weapon_hero_unicorn_set",
-            "DescKey": "citadel_weapon_hero_unicorn_set_desc",
+            "NameKey": "citadel_weapon_unicorn_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_MediumRange",
                 "Attribute_EWeaponAttribute_Projectile",
@@ -5108,6 +5819,7 @@
         "MaxMoveSpeed": 6.5,
         "MoveAcceleration": 4,
         "Name": "Mina",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_vampirebat_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -5145,8 +5857,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 29.008,
             "SustainedDPS": 18.569,
-            "NameKey": "citadel_weapon_hero_vampirebat_set",
-            "DescKey": "citadel_weapon_hero_vampirebat_set_desc",
+            "NameKey": "citadel_weapon_vampirebat_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_BurstFire",
                 "Attribute_EWeaponAttribute_MediumRange"
@@ -5193,7 +5904,7 @@
         "InHeroLabs": false,
         "IsDisabled": true,
         "IsRecommended": false,
-        "IsSelectable": false,
+        "IsSelectable": true,
         "LevelScaling": {
             "BulletDamage": 0.242,
             "MaxHealth": 53.0,
@@ -5210,6 +5921,7 @@
         "MaxMoveSpeed": 7.2,
         "MoveAcceleration": 4,
         "Name": "Vandal",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_vandal_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -5251,8 +5963,6 @@
             "SpinDeceleration": 0.65,
             "DPS": 33.333,
             "SustainedDPS": 24.324,
-            "NameKey": "citadel_weapon_hero_vandal_set",
-            "DescKey": "citadel_weapon_hero_vandal_set_desc",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_RapidFire",
                 "Attribute_EWeaponAttribute_MediumRange"
@@ -5316,6 +6026,7 @@
         "MaxMoveSpeed": 6.9,
         "MoveAcceleration": 4,
         "Name": "Vyper",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_viper_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -5355,8 +6066,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 94.002,
             "SustainedDPS": 48.147,
-            "NameKey": "citadel_weapon_hero_viper_set",
-            "DescKey": "citadel_weapon_hero_viper_set_desc",
+            "NameKey": "citadel_weapon_viper_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_RapidFire",
                 "Attribute_EWeaponAttribute_CloseRange"
@@ -5421,6 +6131,7 @@
         "MaxMoveSpeed": 7.2,
         "MoveAcceleration": 4,
         "Name": "Viscous",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_viscous_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -5459,8 +6170,7 @@
             "ExplosionDamageScaleAtMaxRadius": 0.3,
             "DPS": 49.238,
             "SustainedDPS": 30.866,
-            "NameKey": "citadel_weapon_hero_viscous_set",
-            "DescKey": "citadel_weapon_hero_viscous_set_desc",
+            "NameKey": "citadel_weapon_viscous_set",
             "AltFire": {
                 "BulletSpeed": 38.1,
                 "BulletDamage": 42.0,
@@ -5554,6 +6264,7 @@
         "MaxMoveSpeed": 6.3,
         "MoveAcceleration": 4,
         "Name": "Warden",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_warden_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -5596,8 +6307,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 66.057,
             "SustainedDPS": 39.962,
-            "NameKey": "citadel_weapon_hero_warden_set",
-            "DescKey": "citadel_weapon_hero_warden_set_desc",
+            "NameKey": "citadel_weapon_warden_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_MediumRange",
                 "Attribute_EWeaponAttribute_Projectile"
@@ -5662,6 +6372,7 @@
         "MaxMoveSpeed": 6.7,
         "MoveAcceleration": 4,
         "Name": "Silver",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_werewolf_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -5673,7 +6384,7 @@
         "StaminaRegenPerSecond": 0.222222,
         "TechDuration": 0,
         "TechRange": 0,
-        "Type": "Marksman",
+        "Type": "Brawler",
         "Weapon": {
             "BulletSpeed": 812.8,
             "BulletDamage": 5.1,
@@ -5699,8 +6410,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 42.001,
             "SustainedDPS": 29.229,
-            "NameKey": "citadel_weapon_hero_werewolf_set",
-            "DescKey": "citadel_weapon_hero_werewolf_set_desc",
+            "NameKey": "citadel_weapon_werewolf_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_Spreadshot",
                 "Attribute_EWeaponAttribute_MediumRange"
@@ -5735,7 +6445,7 @@
             }
         },
         "CritDamageBonusPercent": 0.0,
-        "CritDamageReceivedPercent": 0.0,
+        "CritDamageReceivedPercent": 20.0,
         "CrouchSpeed": 4.75,
         "GroundDashDistanceInMeters": 10.0,
         "GroundDashDuration": 0.68,
@@ -5750,20 +6460,21 @@
         "IsSelectable": true,
         "LevelScaling": {
             "BulletDamage": 0.7735,
-            "MaxHealth": 31.0,
+            "MaxHealth": 46.0,
             "PowerIncreases": 1,
             "TechPower": 1.1,
             "LightMeleeDamage": 1.58,
             "HeavyMeleeDamage": 3.6656,
             "DPS": 1.547,
-            "SustainedDPS": 1.547
+            "SustainedDPS": 1.2376
         },
         "LightMeleeDamage": 50,
         "Lore": "hero_werewolf_transformed_lore",
-        "MaxHealth": 830.0,
-        "MaxMoveSpeed": 6.7,
+        "MaxHealth": 955.0,
+        "MaxMoveSpeed": 8.2,
         "MoveAcceleration": 4,
         "Name": "Silver (Transformed)",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_werewolf_transformed_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -5775,12 +6486,12 @@
         "StaminaRegenPerSecond": 0.222222,
         "TechDuration": 0,
         "TechRange": 0,
-        "Type": "Marksman",
+        "Type": "Brawler",
         "Weapon": {
             "BulletSpeed": 254.0,
             "BulletDamage": 25.0,
             "RoundsPerSecond": 2.0,
-            "ClipSize": 0,
+            "ClipSize": 12,
             "ReloadTime": 1.5,
             "ReloadMovespeed": 1.0,
             "ReloadDelay": 0.0,
@@ -5800,9 +6511,7 @@
             "CanCrit": true,
             "AmmoConsumedPerShot": 1,
             "DPS": 50.0,
-            "SustainedDPS": 50.0,
-            "NameKey": "citadel_weapon_hero_werewolf_transformed_set",
-            "DescKey": "citadel_weapon_hero_werewolf_transformed_set_desc",
+            "SustainedDPS": 40.0,
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_Spreadshot",
                 "Attribute_EWeaponAttribute_MediumRange"
@@ -5866,6 +6575,7 @@
         "MaxMoveSpeed": 7.2,
         "MoveAcceleration": 4,
         "Name": "Wraith",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_wraith_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -5905,8 +6615,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 59.682,
             "SustainedDPS": 37.921,
-            "NameKey": "citadel_weapon_hero_wraith_set",
-            "DescKey": "citadel_weapon_hero_wraith_set_desc",
+            "NameKey": "citadel_weapon_wraith_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_RapidFire",
                 "Attribute_EWeaponAttribute_MediumRange"
@@ -5953,7 +6662,7 @@
         "InHeroLabs": false,
         "IsDisabled": true,
         "IsRecommended": false,
-        "IsSelectable": false,
+        "IsSelectable": true,
         "LevelScaling": {
             "BulletDamage": 0.77,
             "MaxHealth": 63.0,
@@ -5970,6 +6679,7 @@
         "MaxMoveSpeed": 7.2,
         "MoveAcceleration": 4,
         "Name": "Wrecker",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_wrecker_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -6007,8 +6717,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 75.6,
             "SustainedDPS": 43.615,
-            "NameKey": "citadel_weapon_hero_wrecker_set",
-            "DescKey": "citadel_weapon_hero_wrecker_set_desc",
+            "NameKey": "citadel_weapon_wrecker_set",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_MediumRange"
             ]
@@ -6054,7 +6763,7 @@
         "InHeroLabs": false,
         "IsDisabled": true,
         "IsRecommended": false,
-        "IsSelectable": false,
+        "IsSelectable": true,
         "LevelScaling": {
             "MaxHealth": 63.0,
             "PowerIncreases": 1,
@@ -6068,6 +6777,7 @@
         "MaxMoveSpeed": 7.2,
         "MoveAcceleration": 4,
         "Name": "The Boss",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_yakuza_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -6105,8 +6815,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 54.0,
             "SustainedDPS": 30.0,
-            "NameKey": "citadel_weapon_hero_yakuza_set",
-            "DescKey": "citadel_weapon_hero_yakuza_set_desc"
+            "NameKey": "citadel_weapon_yakuza_set"
         },
         "WeaponPowerScale": 1
     },
@@ -6167,6 +6876,7 @@
         "MaxMoveSpeed": 8.2,
         "MoveAcceleration": 4,
         "Name": "Yamato",
+        "OOCHealthRegen": 0,
         "Playstyle": "hero_yamato_playstyle",
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
@@ -6207,8 +6917,7 @@
             "AmmoConsumedPerShot": 1,
             "DPS": 63.216,
             "SustainedDPS": 42.571,
-            "NameKey": "citadel_weapon_hero_yamato_set",
-            "DescKey": "citadel_weapon_hero_yamato_set_desc",
+            "NameKey": "citadel_weapon_yamato_set",
             "AltFire": {
                 "BulletSpeed": 76.2,
                 "BulletDamage": 50,
